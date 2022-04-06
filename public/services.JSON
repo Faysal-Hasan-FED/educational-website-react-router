@@ -1,0 +1,56 @@
+[
+    {
+      "name": "TOEFL",
+      "fullName": "Test of English as a Foreign Language",
+      "price": "200$",
+      "img" : "../utilities/images/tofelwebp.webp"
+    },
+    {
+      "name": "IELTS",
+      "fullName": "International English Language Testing System",
+      "price": "170$",
+      "img" : "../utilities/images/ielts.webp"
+    },
+    {
+      "name": "GRE",
+      "fullName": "Graduate Record Examination",
+      "price": "220$",
+      "img" : "../utilities/images/GRE.png"
+    },
+    {
+      "name": "PSAT",
+      "fullName": "The Preliminary SAT",
+      "price": "200$",
+      "img" : "../utilities/images/test_prep_PSAT_orange-2x.jpg"
+    },
+    {
+      "name": "GED",
+      "fullName": "General Educational Development Test",
+      "price": "130$",
+      "img" : "../utilities/images/ged_overall.png"
+    },
+    {
+      "name": "ASVAB",
+      "fullName": "Armed Services Vocational Aptitude Battery test",
+      "price": "120$",
+      "img":"../utilities/images/ASVAB-Updated-3.png"
+    },
+    {
+      "name": "TESOL",
+      "fullName": "Teaching English to speakers of other languages",
+      "price": "120$",
+      "img":"/utilities/images/download.jpg"
+    },
+    {
+      "name": "SAT",
+      "fullName": " Scholastic Aptitude Test ",
+      "price": "220$",
+      "img":"../utilities/images/test_prep_SAT_green-2x.jpg"
+    },
+    {
+      "name": "GMAT",
+      "fullName": "Graduate Management Admission Test",
+      "price": "160$",
+      "img":"../utilities/images/download.png"
+    }
+  ]
