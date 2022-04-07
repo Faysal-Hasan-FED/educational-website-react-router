@@ -20,7 +20,7 @@ const Services = () => {
                     services.map(service => <Service 
                         key={service.key}
                         service={service}>
-                            <p>Get this</p>
+                            <Button variant="outline-dark" size="sm">Order This Course</Button>
                         </Service>)
                 }
 

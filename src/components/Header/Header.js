@@ -2,7 +2,8 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 
-const Header = () => {
+const Header = props => {
+
     return (
         <nav className='bg-dark py-2 text-center'>
             <NavLink to="/home"
@@ -24,7 +25,7 @@ const Header = () => {
     color: isActive ? 'red' : 'white',
     marginRight: isActive ? '25px' : '25px',
     textDecoration: isActive? 'none' : 'none',
-    fontWeight: isActive ? 'bold' : 'normal'})}>Orders </NavLink>
+    fontWeight: isActive ? 'bold' : 'normal'})}>Orders</NavLink>
 
             <NavLink to="/about"
     style={({ isActive }) => ({

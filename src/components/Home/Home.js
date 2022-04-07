@@ -23,7 +23,7 @@ const Home = () => {
                         key={service.key}
                         service={service}>
                             <Link to="/inquiry">
-                                <Button>Get Information</Button>
+                                <Button variant='outline-dark'>Get Information</Button>
                             </Link>
                         </Service>)
                 }
