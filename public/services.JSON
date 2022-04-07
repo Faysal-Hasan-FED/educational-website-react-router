@@ -2,55 +2,75 @@
     {
       "name": "TOEFL",
       "fullName": "Test of English as a Foreign Language",
-      "price": "200$",
-      "img" : "../utilities/images/tofelwebp.webp"
-    },
-    {
-      "name": "IELTS",
-      "fullName": "International English Language Testing System",
-      "price": "170$",
-      "img" : "../utilities/images/ielts.webp"
-    },
-    {
-      "name": "GRE",
-      "fullName": "Graduate Record Examination",
-      "price": "220$",
-      "img" : "../utilities/images/GRE.png"
-    },
-    {
-      "name": "PSAT",
-      "fullName": "The Preliminary SAT",
-      "price": "200$",
-      "img" : "../utilities/images/test_prep_PSAT_orange-2x.jpg"
-    },
-    {
-      "name": "GED",
-      "fullName": "General Educational Development Test",
-      "price": "130$",
-      "img" : "../utilities/images/ged_overall.png"
-    },
-    {
-      "name": "ASVAB",
-      "fullName": "Armed Services Vocational Aptitude Battery test",
-      "price": "120$",
-      "img":"../utilities/images/ASVAB-Updated-3.png"
-    },
-    {
-      "name": "TESOL",
-      "fullName": "Teaching English to speakers of other languages",
-      "price": "120$",
-      "img":"/utilities/images/download.jpg"
+      "price1": "200$",
+      "price2":"180$",
+      "img" : "https://www.vec.ca/wp-content/uploads/2019/03/TOEFL-Test-Preparation-Courses-at-VEC-704x350.png",
+      "key": "ASDF952"
     },
     {
       "name": "SAT",
       "fullName": " Scholastic Aptitude Test ",
-      "price": "220$",
-      "img":"../utilities/images/test_prep_SAT_green-2x.jpg"
+      "price1": "220$",
+      "price2":"200$",
+      "img":"https://www.wyzant.com/blog/wp-content/uploads/2021/01/SAT-Prep-Simplified.png",
+      "key": "ASDF127"
     },
+    {
+      "name": "IELTS",
+      "fullName": "International English Language Testing System",
+      "price1": "170$",
+      "price2":"150$",
+      "img" : "https://studentportal-assets.s3.ap-south-1.amazonaws.com/images/classroom/ielts-classes-in-vadodara.svg",
+      "key": "ASDF548"
+    },
+    {
+      "name": "GRE",
+      "fullName": "Graduate Record Examination",
+      "price1": "250$",
+      "price2":"230$",
+      "img" : "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/04/27175252/GRE-Study-Material.png",
+      "key": "ASDF200"
+    },
+    
+    {
+      "name": "PSAT",
+      "fullName": "The Preliminary SAT",
+      "price1": "200$",
+      "price2":"180$",
+      "img" : "https://www.tutelaprep.com/assets/images/tutela-banner-signup-3.jpg",
+      "key": "ASDF199"
+    },
+    {
+      "name": "GED",
+      "fullName": "General Educational Development Test",
+      "price1": "130$",
+      "price2":"110$",
+      "img" : "https://ged.com/wp-content/uploads/GED-practice-questions-subjects.svg",
+      "key": "ASDF135"
+    },
+    {
+      "name": "ASVAB",
+      "fullName": "Armed Services Vocational Aptitude Battery test",
+      "price1": "120$",
+      "price2":"100$",
+      "img":"https://www.simplilearn.com/ice9/free_resources_article_thumb/book-resources-to-read-for-cissp-certification-exam-article.jpg",
+      "key": "ASDF123"
+    },
+    {
+      "name": "TESOL",
+      "fullName": "Teaching English to speakers of other languages",
+      "price1": "160$",
+      "price2":"140$",
+      "img":"https://st4.depositphotos.com/17134304/28449/v/380/depositphotos_284499444-stock-illustration-woman-leads-course-lectures-online.jpg?forcejpeg=true",
+      "key": "ASDF126"
+    },
+    
     {
       "name": "GMAT",
       "fullName": "Graduate Management Admission Test",
-      "price": "160$",
-      "img":"../utilities/images/download.png"
+      "price1": "160$",
+      "price2":"140$",
+      "img":"https://www.lorenacademic.com/2020/wp-content/uploads/2020/11/rep_img_2.svg",
+      "key": "ASDF128"
     }
   ]
