@@ -5,6 +5,7 @@ import { clearTheCart } from '../../utilities/fakedb';
 
 const Cart = props => {
     const {cart} = props;
+    console.log(props)
     
     let total = 0;
     let quantity = 0;
@@ -13,21 +14,19 @@ const Cart = props => {
         total = (total + item.price2*item.quantity);
     }
 
-    const navigate = useNavigate();
-    const handlePlaceOrder = () =>{
-        navigate('/placeorder');
-
-        // clear the db 
-        clearTheCart();
+    const fixedStyle={
+        position: 'fixed',
+        top: '35%',
+        left: '55%'
     }
     
     return (
-        <div>
+        <div className='card p-2 shadow' style={fixedStyle} >
             <h2>Order Summary</h2>
             <h4>Total Ordered: {quantity}</h4>
             <p>Total: {total}$</p>
 
-           { cart.length ? <Button onClick={handlePlaceOrder} variant="outline-success">Place Order</Button> : <h3>Please Order Something</h3>}
+            <p>{props.children}</p>
         </div>
     );
 };

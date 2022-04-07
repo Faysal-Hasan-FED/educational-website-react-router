@@ -2,8 +2,9 @@ import React from 'react';
 import { Button, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useServices from '../../hooks/useServices';
+import CourseHome from '../CourseHome/CourseHome';
 import MyCarosuel from '../MyCarousel/MyCarosuel';
-import Service from '../Service/Service';
+
 
 
 const Home = () => {
@@ -19,13 +20,7 @@ const Home = () => {
                 services.length &&  <Row xs={1} md={2} className="g-4">
 
                 {
-                    services.slice(0,4).map(service => <Service 
-                        key={service.key}
-                        service={service}>
-                            <Link to="/inquiry">
-                                <Button variant='outline-dark'>Get Information</Button>
-                            </Link>
-                        </Service>)
+                    services.slice(0,4).map(service => <CourseHome service={service} key={service.key}></CourseHome>)
                 }
 
                 </Row>

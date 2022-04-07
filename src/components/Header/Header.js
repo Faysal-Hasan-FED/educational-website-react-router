@@ -18,7 +18,7 @@ const Header = props => {
     color: isActive ? 'red' : 'white',
     marginRight: isActive ? '25px' : '25px',
     textDecoration: isActive? 'none' : 'none',
-    fontWeight: isActive ? 'bold' : 'normal'})}>Services </NavLink>
+    fontWeight: isActive ? 'bold' : 'normal'})}>Courses </NavLink>
 
             <NavLink to="/orders"
     style={({ isActive }) => ({

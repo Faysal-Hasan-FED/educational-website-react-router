@@ -1,10 +1,9 @@
-import React, { useContext } from 'react';
-import {  Button, Card, Col } from 'react-bootstrap';
-import { OrderContext } from '../../App';
+import React from 'react';
+import { Button, Card, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
-const Service = props => {
-    const {name,fullName,img,price1,price2} = props.service;
-   
+const CourseHome = props => {
+    const {name,fullName,price1,price2,img} = props.service;
     return (
         <Col>
         <Card className='h-100'>
@@ -17,11 +16,13 @@ const Service = props => {
             </Card.Text>
             <h3 className='text-success'>Get only at <small className='text-decoration-line-through text-danger'>{price1}$</small> {price2}$ </h3>
             
-            <p onClick={()=>props.handleBuyButton(props.service)}>{props.children} </p>
+            <Link to="/inquiry">
+                <Button variant="outline-dark">Get Information</Button>
+            </Link>
           </Card.Body>
         </Card>
       </Col>
-    )
+    );
 };
 
-export default Service;
+export default CourseHome;

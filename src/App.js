@@ -22,42 +22,11 @@ function App() {
   const [cart,setCart] = useState([]);
 
 
-  const handleBuyButton = service =>{
-    const exists = cart.find(sv => sv.key === service.key);
-    let newCart = [];
-    if(exists){
-      const rest = cart.filter ( sv => sv.key !== service.key);
-      exists.quantity = exists.quantity +1;
-      newCart = [...rest, service];
-    }
-    else{
-      service.quantity = 1;
-      newCart = [...cart,service];
-    }
-    setCart(newCart);
-    addToDb(service.key);
-  }
-
-
-  useEffect(()=>{
-    if(services.length){
-        const savedCart = getStoredCart();
-        const storedCart = [];
-        for(const key in savedCart){
-          const addedService = services.find(service => service.key === key);
-          if(addedService){
-            const quantity = savedCart[key];
-            addedService.quantity = quantity;
-            storedCart.push(addedService);
-          }
-        }
-        setCart(storedCart);
-    }
-  },[services])
+  
 
   return (
     <div className='bg-light'>
-      <OrderContext.Provider value={handleBuyButton}>
+     
       <BrowserRouter>
       <Header>
         {cart}
@@ -78,7 +47,7 @@ function App() {
       <Footer></Footer>
       </BrowserRouter>
 
-      </OrderContext.Provider>
+     
       
     </div>
   );
