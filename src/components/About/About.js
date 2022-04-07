@@ -1,0 +1,12 @@
+import React from 'react';
+import { Container } from 'react-bootstrap';
+
+const About = () => {
+    return (
+        <Container className='my-3'>
+            <h2>This is about us</h2>
+        </Container>
+    );
+};
+
+export default About;

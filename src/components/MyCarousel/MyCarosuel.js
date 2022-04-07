@@ -6,13 +6,13 @@ import third from '../../images/online.webp';
 
 
 const MyCarosuel = () => {
-    const imageStyle={height:'500px',objectFit:'cover'}
+    const imageStyle={height:'500px'}
     return (
         <Carousel className='my-3'>
   <Carousel.Item>
     <img
     style={imageStyle}
-      className="d-block w-100 "
+      className="d-block w-100"
       src ={first}
       alt="First slide"
     />
