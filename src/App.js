@@ -39,7 +39,6 @@ function App() {
         <Route path="/orders" element={<Orders>
           {cart}
         </Orders>}></Route>
-
         <Route path="/placeorder" element={<PlaceOrder></PlaceOrder>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>

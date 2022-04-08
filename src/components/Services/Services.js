@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Button, Container, Row } from 'react-bootstrap';
+import { Button, Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useCart from '../../hooks/useCart';
 import useServices from '../../hooks/useServices';
@@ -54,28 +54,29 @@ const Services = () => {
         </div>
 
 
-        <Row xs={2}  className="g-4">
-          {
-            <Row xs={1} md={1} className="g-4">
+        <Row  className="g-4">
+            <Col xs={8} className="g-4">
+              <Row>
+                {
+              services.map(service => <Service 
+              key={service.key}
+              service={service}
+              handleBuyButton= {handleBuyButton}>
+              <Button variant="outline-dark" size="sm">Order This Course</Button>
+              </Service>)
+            }
+              </Row>
+            
+            </Col>
+          
 
-              {
-                services.map(service => <Service 
-                key={service.key}
-                service={service}
-                handleBuyButton= {handleBuyButton}>
-                <Button variant="outline-dark" size="sm">Order This Course</Button>
-                </Service>)
-                }
-            </Row>
-          }
-
-
+          <Col xs={4}>
           <Cart  cart={cart}>
             <Link to="/orders">
             <Button variant="outline-success">Review Order</Button>
             </Link>
           </Cart>
-
+          </Col>
 
         </Row>
     </Container>

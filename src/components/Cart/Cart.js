@@ -14,14 +14,9 @@ const Cart = props => {
         total = (total + item.price2*item.quantity);
     }
 
-    const fixedStyle={
-        position: 'fixed',
-        top: '35%',
-        left: '55%'
-    }
     
     return (
-        <div className='card p-2 shadow' style={fixedStyle} >
+        <div >
             <h2>Order Summary</h2>
             <h4>Total Ordered: {quantity}</h4>
             <p>Total: {total}$</p>

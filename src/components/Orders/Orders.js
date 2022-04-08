@@ -29,10 +29,10 @@ const Orders = props => {
     <Container>
        
         <Row>
-            <Col xs={6} >
+            <Col xs={8} >
                 {cart.map(item => <ReviewItem handleRemoveButton={handleRemoveButton} key={item.key} item={item}></ReviewItem>)}
             </Col>
-            <Col xs={6} >
+            <Col xs={4} >
                 <Cart 
                 removeCart={removeCart}
                  cart={cart}>

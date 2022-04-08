@@ -17,8 +17,8 @@ const MyCarosuel = () => {
       alt="First slide"
     />
     <Carousel.Caption>
-      <h3 className='text-warning'>Start E-Learning</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <h3 className='bg-info text-dark p-3 rounded shadow'>Start E-Learning</h3>
+      <p className='bg-info text-dark p-3 rounded shadow '>This is a great opportunity for you to start E-Learning</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -30,8 +30,8 @@ const MyCarosuel = () => {
     />
 
     <Carousel.Caption>
-      <h3 className='text-dark'>Ask Your Teacher</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h3 className='bg-dark text-white p-3 rounded shadow'>Ask Your Teacher</h3>
+      <p className='bg-dark text-white p-3 rounded shadow'>You can ask your teacher anytime in online and it will surely help you in the long run</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -43,8 +43,8 @@ const MyCarosuel = () => {
     />
 
     <Carousel.Caption>
-      <h3 className='text-danger'>Learn from Internet</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <h3 className='bg-secondary text-dark p-3 rounded shadow'>Learn from Internet</h3>
+      <p className='bg-secondary text-dark p-3 rounded shadow'>This will increase your ability to find some answer from the Internet</p>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>

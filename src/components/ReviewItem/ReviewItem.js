@@ -9,7 +9,8 @@ const ReviewItem = props => {
             <div className="border m-2 shadow rounded p-3">
             <h2>{name}</h2>
             <p>Quanitity: {quantity}</p>
-            <p>Price: {price2}</p>
+            <p>Price: {price2}$</p>
+            <p>Total Price: {(price2*quantity).toFixed(2)}$</p>
             <Button onClick={()=>props.handleRemoveButton(props.item.key)} variant='outline-danger'>Remove This</Button>
             </div>
             
