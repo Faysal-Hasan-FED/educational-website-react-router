@@ -2,7 +2,7 @@
 This is my practise of react router and also my first readme file edit 
 I am very much excited about this .
 
-## This site is mainly Educatinal Website
+## This site is mainly Educational Practice Website done by *reactJs*
 
 > Header Section 
 * In this section you can see a *Carousel* 
